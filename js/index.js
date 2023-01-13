@@ -12,7 +12,7 @@ qrText.addEventListener('input', handleQRText);
 sizes.addEventListener('change', handleSize);
 shareBtn.addEventListener('click', handleShare);
 
-const defaultUrl = null;
+const defaultUrl = 'none';
 let colorLight = '#fff',
   colorDark = '#000',
   text = defaultUrl,
@@ -85,4 +85,4 @@ function resolveDataUrl() {
     }, 50);
   });
 }
-generateQRCode
+generateQRCode();
